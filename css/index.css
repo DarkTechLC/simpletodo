@@ -89,7 +89,7 @@ header {
 }
 
 .logo img {
-  height: 30px;
+  height: 35px;
 }
 
 .btn-clear-all:active {
@@ -157,7 +157,7 @@ header {
 }
 
 .task {
-  align-items: center;
+  align-items: stretch;
   animation: fade 500ms;
   border: 2px solid var(--black-color);
   border-radius: 5px;
@@ -177,6 +177,7 @@ header {
 }
 
 .text {
+  align-self: center;
   flex: 1;
   font-size: 1.2em;
   padding-left: 10px;
@@ -223,8 +224,13 @@ header {
 
 @media (max-width: 768px) {
   main {
+    border-radius: 0;
     margin: 0 auto;
     min-height: 100vh;
+  }
+
+  header {
+    border-radius: 0;
   }
 
   .list {

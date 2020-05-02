@@ -11,7 +11,7 @@
   ],
   "start_url": "https://darktechlc.githuub.io/simpletodo/index.html",
   "background_color": "#08090a",
-  "display": "fullscreen",
+  "display": "standalone",
   "scope": "/simpletodo/index.html",
   "theme_color": "#08090a",
   "orientation" : "portrait"

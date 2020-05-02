@@ -1,5 +1,7 @@
 import getTasks from './loadTasks.js';
+import generateId from './generateId.js';
 import countPendentsTasks from './countPendentsTasks.js';
+import removeTask from './removeTask.js';
 
 const insertToDo = document.querySelector('#insert-todo');
 const btnAddToDo = document.querySelector('#btn-add');
@@ -11,8 +13,10 @@ function addTask() {
 
   if (!task) return;
 
+  let id = generateId();
+
   taskList.innerHTML += `
-    <li class="task">
+    <li class="task" data-id="${id}">
       <button class="btn-task btn-check"><i class="fas fa-circle"></i></button>
       <span class="text">${task}</span>
       <button class="btn-task btn-del"><i class="fas fa-trash-alt"></i></button>
@@ -20,14 +24,15 @@ function addTask() {
     
   let newTask = {
     task,
-    done: false
+    done: false,
+    id
   };
   
   tasks.push(newTask);
-  
   localStorage.setItem('ToDo', JSON.stringify(tasks));
   
   countPendentsTasks();
+  removeTask();
 
   insertToDo.value = '';
 }
