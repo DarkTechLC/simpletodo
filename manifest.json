@@ -1,0 +1,18 @@
+{
+  "short_name": "Simple ToDo List",
+  "name": "Simple ToDo List App",
+  "description": "A simple to do list app",
+  "icons": [
+    {
+      "src": "/img/logo-icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "https://darktechlc.githuub.io/simpletodo/index.html",
+  "background_color": "#08090a",
+  "display": "fullscreen",
+  "scope": "/simpletodo/index.html",
+  "theme_color": "#08090a",
+  "orientation" : "portrait"
+}

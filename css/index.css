@@ -118,7 +118,7 @@ header {
   color: var(--white-color);
   font-size: 1.1em;
   padding: 5px 15px;
-  transition: all 500ms;
+  transition: background 400ms;
   width: 100%;
 }
 
@@ -158,11 +158,22 @@ header {
 
 .task {
   align-items: center;
+  animation: fade 500ms;
   border: 2px solid var(--black-color);
   border-radius: 5px;
   display: flex;
   list-style: none;
   margin-bottom: 10px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .text {

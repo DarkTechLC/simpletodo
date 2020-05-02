@@ -6,6 +6,8 @@
   <title>Simple To Do App</title>
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="shortcut icon" href="img/logo-icon.png" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <div id="loader" class="loader"></div>
@@ -51,5 +53,18 @@
   </main>
 
   <script src="js/index.js" type="module"></script>
+
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(function () {
+          console.log('service worker registered');
+        })
+        .catch(function () {
+          console.warn('service worker failed');
+        });
+    }
+  </script>
 </body>
 </html>
