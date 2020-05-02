@@ -38,7 +38,7 @@ button {
 }
 
 .background {
-  background: url(../img/background-large.jpg) no-repeat center fixed, var(--black-color);
+  background: linear-gradient(to top, var(--black-color), var(--white-color));
   filter: blur(1px);
   height: 100vh;
   position: fixed;
@@ -116,10 +116,10 @@ header {
   border: 2px solid var(--white-color);
   border-radius: 50px;
   color: var(--white-color);
-  flex-grow: 1;
   font-size: 1.1em;
   padding: 5px 15px;
   transition: all 500ms;
+  width: 100%;
 }
 
 .insert-todo::placeholder {
@@ -153,7 +153,7 @@ header {
 }
 
 .list {
-  max-height: 400px;
+  max-height: calc(100vh - 271px);
 }
 
 .task {
@@ -208,4 +208,26 @@ header {
 
 .checked .text {
   text-decoration: line-through;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 0 auto;
+    min-height: 100vh;
+  }
+
+  .list {
+    max-height: calc(100vh - 231px);
+  }
+}
+
+@media (max-width: 420px) {
+  header,
+  .area-add {
+    padding: 20px 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
 }
