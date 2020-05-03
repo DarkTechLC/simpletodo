@@ -8,7 +8,7 @@ function removeTaskFromStorage(id) {
 
   // console.log(id, indexTaskToRemove, taskToRemove);
   // tasks.map(i => console.log(i));
-  tasks.splice(taskToRemove, 1);
+  tasks.splice(indexTaskToRemove, 1);
   // tasks.map(i => console.log(i));
 
   localStorage.setItem('ToDo', JSON.stringify(tasks));
