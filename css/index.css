@@ -104,6 +104,11 @@ header {
   font-size: 1.1em;
 }
 
+#pendents-task-counter, 
+#time {
+  animation: fade 500ms;
+}
+
 .area-add {
   background: var(--black-color);
   border-top: 1px solid var(--white-color);
