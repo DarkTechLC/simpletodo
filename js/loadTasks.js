@@ -1,10 +1,3 @@
-// const load = 
-//   localStorage.getItem('ToDo') || 
-//   localStorage.setItem('ToDo', []);
-// const tasks = JSON.parse(load);
-// 
-// export default tasks;
-
 export default function getTasks() {
   let load;
 

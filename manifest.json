@@ -9,9 +9,9 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "https://darktechlc.githuub.io/simpletodo/index.html",
+  "start_url": "https://darktechlc.githuub.io/simpletodo/",
   "background_color": "#08090a",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "/simpletodo/index.html",
   "theme_color": "#08090a",
   "orientation" : "portrait"

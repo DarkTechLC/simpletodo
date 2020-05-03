@@ -14,6 +14,8 @@ self.addEventListener('install', function (event) {
         '/js/loadTasks.js',
         '/js/renderTasks.js',
         '/js/setTime.js',
+        '/js/removeTask.js',
+        '/js/generateId.js',
       ]);
     })
   )

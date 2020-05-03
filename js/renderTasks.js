@@ -5,7 +5,6 @@ const taskList = document.querySelector('#list');
 
 export default function renderTasks() {
   let tasks = getTasks();
-
   let content;
 
   tasks.map(task => {
@@ -21,5 +20,5 @@ export default function renderTasks() {
     taskList.innerHTML += content;
   });
 
-  removeTask();
+  removeTask(); // Run this function for add remove function in all tasks
 }

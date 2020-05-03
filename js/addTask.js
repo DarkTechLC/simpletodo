@@ -23,16 +23,16 @@ function addTask() {
     </li>`;
     
   let newTask = {
+    id,
     task,
     done: false,
-    id
   };
   
   tasks.push(newTask);
   localStorage.setItem('ToDo', JSON.stringify(tasks));
   
   countPendentsTasks();
-  removeTask();
+  removeTask(); // Run this function for add remove function in all tasks
 
   insertToDo.value = '';
 }
