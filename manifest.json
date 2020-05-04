@@ -4,15 +4,15 @@
   "description": "A simple to do list app",
   "icons": [
     {
-      "src": "/img/logo-icon-192x192.png",
+      "src": "img/logo-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     }
   ],
-  "start_url": "https://darktechlc.github.io/simpletodo/",
+  "start_url": "https://darktechlc.github.io/simpletodo/index.html",
   "background_color": "#08090a",
   "display": "fullscreen",
-  "scope": "/simpletodo/index.html",
+  "scope": "https://darktechlc.github.io/simpletodo/",
   "theme_color": "#08090a",
   "orientation" : "portrait"
 }

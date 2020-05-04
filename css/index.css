@@ -104,7 +104,7 @@ header {
   font-size: 1.1em;
 }
 
-#pendents-task-counter, 
+#pendents-task-counter,
 #time {
   animation: fade 500ms;
 }
