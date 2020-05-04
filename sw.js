@@ -17,6 +17,7 @@ self.addEventListener('install', function (event) {
         '/simpletodo/js/setTime.js',
         '/simpletodo/js/removeTask.js',
         '/simpletodo/js/generateId.js',
+        '/simpletodo/js/markAsDone.js',
         '/simpletodo/img/logo-icon.png',
       ]);
     })
