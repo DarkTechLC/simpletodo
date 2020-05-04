@@ -4,19 +4,20 @@ self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/css/index.css',
-        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css',
-        '/js/index.js',
-        '/js/addTask.js',
-        '/js/clearAll.js',
-        '/js/countPendentsTasks.js',
-        '/js/loadTasks.js',
-        '/js/renderTasks.js',
-        '/js/setTime.js',
-        '/js/removeTask.js',
-        '/js/generateId.js',
+        '/simpletodo/',
+        '/simpletodo/index.html',
+        '/simpletodo/sw.js',
+        '/simpletodo/css/index.css',
+        '/simpletodo/js/index.js',
+        '/simpletodo/js/addTask.js',
+        '/simpletodo/js/clearAll.js',
+        '/simpletodo/js/countPendentsTasks.js',
+        '/simpletodo/js/loadTasks.js',
+        '/simpletodo/js/renderTasks.js',
+        '/simpletodo/js/setTime.js',
+        '/simpletodo/js/removeTask.js',
+        '/simpletodo/js/generateId.js',
+        '/simpletodo/img/logo-icon.png',
       ]);
     })
   )

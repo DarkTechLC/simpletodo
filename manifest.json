@@ -9,10 +9,9 @@
       "sizes": "192x192"
     }
   ],
-  "start_url": "https://darktechlc.github.io/simpletodo/index.html",
+  "start_url": ".",
   "background_color": "#08090a",
   "display": "fullscreen",
-  "scope": "https://darktechlc.github.io/simpletodo/",
   "theme_color": "#08090a",
   "orientation" : "portrait"
 }
