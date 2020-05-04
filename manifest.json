@@ -4,9 +4,19 @@
   "description": "A simple to do list app",
   "icons": [
     {
+      "src": "img/logo-icon.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    },
+    {
       "src": "img/logo-icon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "img/logo-icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",

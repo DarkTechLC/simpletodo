@@ -18,7 +18,11 @@ self.addEventListener('install', function (event) {
         '/simpletodo/js/removeTask.js',
         '/simpletodo/js/generateId.js',
         '/simpletodo/js/markAsDone.js',
+        '/simpletodo/img/logo-icon.svg',
         '/simpletodo/img/logo-icon.png',
+        '/simpletodo/img/logo-icon-192x192.png',
+        '/simpletodo/img/logo-icon-512x512.png',
+        '/simpletodo/img/logo-icon-darktech.png',
       ]);
     })
   )

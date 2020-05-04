@@ -6,14 +6,10 @@ const taskList = document.querySelector('#list');
 function clearAllTasks() {
   taskList.innerHTML = '';
 
-  // localStorage.clear();
-
   const content = JSON.stringify([]);
-  
   localStorage.setItem('ToDo', content);
 
   countPendentsTasks();
-  // localStorage.removeItem('ToDo');
 }
 
 export default function clear() {

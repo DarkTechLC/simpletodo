@@ -21,6 +21,6 @@ export default function renderTasks() {
     taskList.innerHTML += content;
   });
 
-  markAsDone();
+  markAsDone(); // Run this function for add mark task function in all tasks
   removeTask(); // Run this function for add remove function in all tasks
 }
