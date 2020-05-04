@@ -1,4 +1,5 @@
 import getTasks from './loadTasks.js';
+import markAsDone from './markAsDone.js';
 import removeTask from './removeTask.js';
 
 const taskList = document.querySelector('#list');
@@ -20,5 +21,6 @@ export default function renderTasks() {
     taskList.innerHTML += content;
   });
 
+  markAsDone();
   removeTask(); // Run this function for add remove function in all tasks
 }

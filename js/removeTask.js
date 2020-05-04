@@ -25,7 +25,7 @@ export default function removeTask() {
       delBtnElement.parentNode.remove();
       removeTaskFromStorage(id);
     });
-  })
+  });
   
   // let taskElements = document.querySelectorAll('.tasks');
   // taskElements.forEach(taskElement => {

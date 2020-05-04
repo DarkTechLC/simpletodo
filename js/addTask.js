@@ -1,6 +1,7 @@
 import getTasks from './loadTasks.js';
 import generateId from './generateId.js';
 import countPendentsTasks from './countPendentsTasks.js';
+import markAsDone from './markAsDone.js';
 import removeTask from './removeTask.js';
 
 const insertToDo = document.querySelector('#insert-todo');
@@ -32,6 +33,7 @@ function addTask() {
   localStorage.setItem('ToDo', JSON.stringify(tasks));
   
   countPendentsTasks();
+  markAsDone(); // Run this function for add mark function in all tasks
   removeTask(); // Run this function for add remove function in all tasks
 
   insertToDo.value = '';
