@@ -5,6 +5,7 @@ self.addEventListener('install', function (event) {
     caches.open(CACHE_NAME).then(function (cache) {
       return cache.addAll([
         '/simpletodo/',
+        '/simpletodo/manifest.json',
         '/simpletodo/index.html',
         '/simpletodo/sw.js',
         '/simpletodo/css/index.css',
@@ -23,6 +24,7 @@ self.addEventListener('install', function (event) {
         '/simpletodo/img/logo-icon-192x192.png',
         '/simpletodo/img/logo-icon-512x512.png',
         '/simpletodo/img/logo-icon-darktech.png',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'
       ]);
     })
   )

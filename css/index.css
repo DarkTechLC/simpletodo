@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 
 * {
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
   outline: none;
   padding: 0;
@@ -150,7 +150,7 @@ header {
   background: var(--black-color);
 }
 
-.btn-add:active i{
+.btn-add:active i {
   color: var(--white-color);
 }
 
@@ -218,11 +218,11 @@ header {
   color: var(--white-color);
 }
 
-.checked .btn-check i{
+.checked .btn-check i {
   color: var(--green-color);
 }
 
-.checked .btn-check:active i{
+.checked .btn-check:active i {
   color: var(--white-color);
 }
 

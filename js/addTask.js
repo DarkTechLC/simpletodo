@@ -9,12 +9,12 @@ const btnAddToDo = document.querySelector('#btn-add');
 const taskList = document.querySelector('#list');
 
 function addTask() {
-  let tasks = getTasks();
-  let task = insertToDo.value;
+  const tasks = getTasks();
+  const task = insertToDo.value;
 
   if (!task) return;
 
-  let id = generateId();
+  const id = generateId();
 
   taskList.innerHTML += `
     <li class="task" data-id="${id}">
@@ -22,16 +22,16 @@ function addTask() {
       <span class="text">${task}</span>
       <button class="btn-task btn-del"><i class="fas fa-trash-alt"></i></button>
     </li>`;
-    
-  let newTask = {
+
+  const newTask = {
     id,
     task,
     done: false,
   };
-  
+
   tasks.push(newTask);
   localStorage.setItem('ToDo', JSON.stringify(tasks));
-  
+
   countPendentsTasks();
   markAsDone(); // Run this function for add mark function in all tasks
   removeTask(); // Run this function for add remove function in all tasks
