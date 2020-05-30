@@ -1,6 +1,8 @@
 {
-  "short_name": "Simple ToDo List",
   "name": "Simple ToDo List App",
+  "short_name": "Simple ToDo List",
+  "version": "0.0.2",
+  "manifest_version": 2,
   "description": "A simple to do list app",
   "icons": [
     {
@@ -23,5 +25,5 @@
   "background_color": "#08090a",
   "display": "fullscreen",
   "theme_color": "#08090a",
-  "orientation" : "portrait"
+  "orientation": "portrait"
 }
